@@ -42,7 +42,6 @@ O objetivo principal é apresentar o produto de forma clara, persuasiva e respon
 /
 ├── index.html
 ├── style.css
-├── script.js (opcional)
 ├── backend/
 │   └── process.php
 ```
