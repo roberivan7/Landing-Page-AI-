@@ -19,6 +19,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background: var(--plano-de-fundo);
+    filter: blur();
     font-family: var(--font-Space-grotesk);
     color: var(--cor-font-branca);
 }
@@ -30,6 +31,7 @@ body {
 }
 
 .menu {
+    padding: 5px 10px;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -46,12 +48,72 @@ body {
     gap: 15px;
 }
 
-.primaria {
-    height: 86vh    ;
-    background: url(img/17978.jpg);
-    background-position: center;
+.btn_comecar {
+    height: 31px;
+    width: 90px;
+    background: var(--cor-secundaria);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.lucide {
-    background: #000;
+.primaria {
+    height: 90vh    ;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7),rgba(1, 0, 0, 0.832)), url(img/17978.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.conjunto_btn {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    width: 170px;
+    height: 45px;
+    background: var(--cor-secundaria);
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.saiba_mais {
+    width: 120px;
+    background: var(--plano-de-fundo);
+    color: var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+}
+
+.titulo_inicial {
+    width: 850px;
+    font-size: 100px;
+    text-align: center;
+}
+
+span {
+    color: var(--cor-secundaria);
+}
+
+.subtitulo_inicial {
+    width: 850px;
+    text-align: center;
+}
+
+.card_informativo {
+    display: flex;
+}
+
+.dados_lista {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
