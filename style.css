@@ -12,6 +12,8 @@
     --cor-secundaria: #00E1FF;
     --cor-terciaria: #00E1FF1A;
     --cor-font-paragrafo: #7B899D;
+    --primary: 187 100% 50%;
+    --card: 220 18% 8%;
 }
 
 body {
@@ -103,17 +105,110 @@ span {
     color: var(--cor-secundaria);
 }
 
+hr {
+    color: var(--cor-font-paragrafo);
+}
+
 .subtitulo_inicial {
     width: 850px;
     text-align: center;
 }
 
-.card_informativo {
+.section_secundaria {
+    margin: 70px 0px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.titulo_secundario {
+    width: 100%;
+    font-size: 90px;
+}
+
+.subtitulo_secundario {
+    color: var(--cor-font-paragrafo);
+}
+
+.card_informativo {
+    margin: 65px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+.cards {
+    padding: 35px;
+    background: hsl(var(--card) / .6);
+    border-radius: 15px;
+}
+
+.card_icon {
+    margin: 2px;
+    padding: 15px;
+    height: 35px;
+    background: hsl(var(--primary) / .2);
+    border-radius: 5px;
+}
+
+.titulo_card {
+    font-size: 30px;
+}
+
+.paragrafo_card {
+    font-size: 22px;
+    color: var(--cor-font-paragrafo);
+}
+
+.cards_planos_all {
+    display: flex;
+    gap: 35px;
+    justify-content: space-around ;
+}
+
+.cards_planos {
+    padding: 35px;
+    background-color: var(--cor-font-paragrafo);
+    border-radius: 15px;
 }
 
 .dados_lista {
+    margin: 100px 0px;
     display: flex;
     list-style: none;
     justify-content: space-around;
+}
+
+.titulo_dados {
+    color: var(--cor-secundaria);
+    font-size: 70px;
+}
+
+.titulo_plano {
+    font-size: 35px;
+}
+
+.beneficios_plano {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin: 80px 0px;
+    padding: 50px;
+    background: var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 15px;
+    border-radius: 15px;
 }
